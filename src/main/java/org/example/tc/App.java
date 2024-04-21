@@ -52,9 +52,5 @@ public class App {
         System.out.print("Enter needed function:");
         allModules.get(scanner.nextInt()).Execute(filePath);
     }
-
-    public static void Scan(String[] args) {
-
-    }
-
+    
 }
