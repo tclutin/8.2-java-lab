@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-@SpringBootApplication(scanBasePackages = "org.example.tc")
+@SpringBootApplication
 public class App {
 
     private static List<Contract> modules;
@@ -20,7 +20,6 @@ public class App {
     {
         App.modules = modules;
     }
-
 
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
@@ -52,5 +51,5 @@ public class App {
         System.out.print("Enter needed function:");
         allModules.get(scanner.nextInt()).Execute(filePath);
     }
-    
+
 }
